@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5ddd5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: black;
+    color: white;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #f1e0e0;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.search i {
+    color: #25D366;
+}
+
+.contacts {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact:hover {
+    background-color: crimson;
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contact-name {
+    font-weight: bold;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.chat-header {
+    padding: 20px;
+    background-color: #25D366;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #25D366;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #ffffff;
+    align-self: flex-start;
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    border-top: 1px solid #ccc;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #25D366;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-input button:hover {
+    background-color: #128C7E;
+}
